@@ -1,0 +1,32 @@
+#content-container{
+
+    section{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: 5px;
+
+        
+
+        &:nth-child(1){
+            background-color: red;
+        }
+
+        &:nth-child(2){
+            background-color: orange;
+        }
+
+        &:nth-child(3){
+            background-color: yellow;
+        }
+
+        &:nth-child(4){
+            background-color: purple;
+        }
+    }
+
+    color: $white;
+}
