@@ -6,132 +6,348 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+    </style>
    
      <!-- Font Awesome -->
      <script src="https://kit.fontawesome.com/66f1583f9f.js" crossorigin="anonymous"></script>
      
+      <!-- Fancy Box -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+
     <link rel="stylesheet" href="css/styles.css">
-    <title>Title Goes Here</title>
+    <title>Lauren Roberts Portfolio</title>
 </head>
 
 <body>
 
     <header>
-        <!-- <div> -->
-            <nav id="main-nav">
-                <ul>
-                    <li>
-                        <a href="#Introduction">
-                            <span>
-                                <section>
-                                    <div class="circle"></div>
-                                    <div class="outline"></div>
-                                </section>
-                            </span>
-                            <span class="text"></span>
-                        </a>
-                    </li>
+       <div>
+        <section id="logo-container">
+            <svg id="Logo" data-name="LR-Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.89 58.05"><defs><style>.cls-1{fill:#f2633f}.cls-2{fill:#c42905}</style></defs><path class="cls-1" d="M16.68 51.05ZM69.75 40.41Z" transform="translate(-23.7 -23.64)"/><path class="cls-1" d="M39.32 58h-8.07L0 58.01v-43.5h3.1v40.4l36.22-.01V58z"/><path class="cls-1" d="M11.45 46.62V14.51h3.1v29.01h23.16v3.1H11.45z"/><path class="cls-2" d="m72.45 54.76-1.86-3.12c6.31-2.2 10.48-5.85 10.49-11.57a12.19 12.19 0 0 0-3.5-8.87c-2.87-2.88-7.25-4.46-12.32-4.46H42.81v-3.1h22.45c5.9 0 11.06 1.91 14.51 5.37a15.25 15.25 0 0 1 4.41 11.07 14.64 14.64 0 0 1-6.77 12.48A28 28 0 0 1 74.33 54" transform="translate(-23.7 -23.64)"/><path class="cls-2" d="M61.45 46.5H42.81v-3.1h18.64c2.09 0 5.43-.58 5.51-2.14a2.15 2.15 0 0 0-.5-1.74c-.78-.83-2.61-1.27-5.43-1.31H42.81v-3.1h18.24c3.82 0 6.25.78 7.67 2.29a5.24 5.24 0 0 1 1.33 4c-.12 2.48-2.45 5.1-8.6 5.1Z" transform="translate(-23.7 -23.64)"/><path class="cls-1" d="M31.25 58h7.5-7.5z"/><path class="cls-2" d="M67.62 81.66C67.44 58.89 60.13 57 52 57h-9.19v-3.1H52c11.11 0 18.54 4.72 18.71 27.74ZM81.5 81.69c-.58-16.34-4.22-22.86-7.18-25.45a5.31 5.31 0 0 0-3.39-1.59l-.29-3.08c.28 0 2.84-.19 5.73 2.34 5 4.36 7.73 13.67 8.23 27.68Z" transform="translate(-23.7 -23.64)"/></svg>
+        </section>
     
-                    <li>
-                        <a href="#Branding">
-                              <span>
-                                <section>
-                                    <div class="circle"></div>
-                                    <div class="outline"></div>
-                                </section>
-                            </span>
-                            <span class="text"></span>
-                        </a>
-                    </li>
+        <section id="burger-container">
+            <svg width="81" height="83" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#fff" stroke-width="2" d="M20 28h40M30 36h30M40 44h20"/></svg>
+        </section>
     
-                    <li>
-                        <a href="#Web Design">
-                              <span>
-                                <section>
-                                    <div class="circle"></div>
-                                    <div class="outline"></div>
-                                </section>
-                            </span>
-                            <span class="text"></span>
-                        </a>
-                    </li>
-    
-                    <li>
-                        <a href="#Typography">
-                           <span>
-                                <section>
-                                    <div class="circle"></div>
-                                    <div class="outline"></div>
-                                </section>
-                            </span>
-                            <span class="text"></span>
-                        </a>
-                    </li>
-            
-                </ul>
-            </nav>
-            
-    
-    
-    
-    
-            <!-- <nav>
-                <ul>
-                    <li class="button-container">
-                        <div>
-                            <span class="circle"></span>
-                            <span class="outline"></span>
-                        </div>
-                        <button class="button"></button>
-                    </li>
-                    <li class="button-container">
-                        <div>
-                            <span class="circle"></span>
-                            <span class="outline"></span>
-                        </div>
-                        <button class="button"></button>
-                    </li>
-                    <li class="button-container">
-                        <div>
-                            <span class="circle"></span>
-                            <span class="outline"></span>
-                        </div>
-                        <button class="button"></button>
-                    </li>
-                    <li class="button-container">
-                        <div>
-                            <span class="circle"></span>
-                            <span class="outline"></span>
-                        </div>
-                        <button class="button"></button>
-                    </li>
-                </ul>
-            </nav> -->
-        <!-- </div> -->
+        <nav id="nav-container" data-nav="main-navigation">
+            <ul>
+                <li>
+                    <a href="../content/portfolio_controls.kit">Portfolio</a>
+                    <div class="underline"></div>
+                </li>
+                <li>
+                    <a href="../content/about-content.kit">About</a>
+                    <div class="underline"></div>
+                </li>
+                <li>
+                    <a href="../content/contact-content.kit">Contact</a>
+                    <div class="underline"></div>
+                </li>
+            </ul>
+        </nav>
+       </div>
     </header>
-    <section id="content-container">
+    <section id="portfolio-hero">
+            <div id="portfolio-hero-container">
+         
+                <div id="portfolio-hero-image-container">
+                    <div id="portfolio-hero-text-container">
+                        <h1>Lauren Roberts</h1>
+                        <h3>GRAPHIC DESIGNER</h3>
+            
+                    </div>
+                    <div id="portfolio-hero-tint-container">
+                        <div id="portfolio-hero-tint"></div>
+                    </div>
+                    <div> 
+                        <ul class="carousel">
+                            <li id="gallery-1" class="carousel__slide"> 
+                              
+                            </li>
+                            <li id="gallery-2" class="carousel__slide">
+                               
+                            </li>
+                            <li id="gallery-3" class="carousel__slide">
+                               
+                            </li>
+                        </ul>
+                    </div>
         
-            <!-- <section class="content" id="Introduction">
-                <h1>Welcome to my crib</h1>
-            </section>
+            
+                   
+                </div>
         
-            <section class="content" id="Branding">
-                <h1>Branding</h1>
-            </section>
+               
+              
         
-            <section class="content" id="WebDesign">
-                <h1>Web and Motion</h1>
-            </section>
-        
-            <section class="content" id="Typography">
-                <h1>Typography</h1>
-            </section> -->
+                <!-- <div id="portfolio-hero-project-title">
+                    <a href="#">Mythos
+                        <aside>
+                            <div class="underline"></div>
+                        </aside>
+                    </a>
+                    <a href="#">01&#47;03</a>
+                </div> -->
+            </div>
         
         
         
         </section>
+     <div id="portfolio-controls">  
+                 
+                    <ul>
+                        <li data-filter="all"> <a href="#">All</a></li>
+                        <li data-filter="branding"><a href="#">Branding</a></li>
+                        <li data-filter="print"><a href="#">Print</a></li>
+                        <li data-filter="exhibit"><a href="#">Exhibit</a></li>
+                        <li data-filter="web"><a href="#">Web &#38; Motion</a></li>
+                    </ul>
+               
+                    <div id="lines">
+                        <div class="standard">
+                            <div class="accent"></div>
+                        </div>
+            
+                    </div>
+            </div>
+            
+    <section id="portfolio-gallery">
+                
+                    <div id="filter-container">
+                                <div class="filtr-item" data-category="print" data-sort="big" id="Cloisters">
+                                    <div class="portfolio-project-container">
+                                        <div class="portfolio-cover-image">
+                                
+                                        </div>
+                                        <div class="portfolio-title">
+                                
+                                        </div>
+                                        <div class="portfolio-tags">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filtr-item" data-category="web" data-sort="small" id="MINI">
+                                    <div class="portfolio-project-container">
+                                        <div class="portfolio-cover-image">
+                                
+                                        </div>
+                                        <div class="portfolio-title">
+                                
+                                        </div>
+                                        <div class="portfolio-tags">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filtr-item" data-category="branding, print" data-sort="small" id="Panchatantra">
+                                    <div class="portfolio-project-container">
+                                        <div class="portfolio-cover-image">
+                                
+                                        </div>
+                                        <div class="portfolio-title">
+                                
+                                        </div>
+                                        <div class="portfolio-tags">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filtr-item" data-category="exhibit" data-sort="small" id="NotAnExhibit">
+                                    <div class="portfolio-project-container">
+                                        <div class="portfolio-cover-image">
+                                
+                                        </div>
+                                        <div class="portfolio-title">
+                                
+                                        </div>
+                                        <div class="portfolio-tags">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filtr-item" data-category="print" data-sort="small" id="AnatomyOfArtist">
+                                    <div class="portfolio-project-container">
+                                        <div class="portfolio-cover-image">
+                                
+                                        </div>
+                                        <div class="portfolio-title">
+                                
+                                        </div>
+                                        <div class="portfolio-tags">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filtr-item" data-category="print" data-sort="big" id="Mythos">
+                                    <div class="portfolio-project-container">
+                                        <div class="portfolio-cover-image">
+                                
+                                        </div>
+                                        <div class="portfolio-title">
+                                
+                                        </div>
+                                        <div class="portfolio-tags">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filtr-item" data-category="branding, exhibit, web" data-sort="big" id="UndercoverArt">
+                                    <div class="portfolio-project-container">
+                                        <div class="portfolio-cover-image">
+                                
+                                        </div>
+                                        <div class="portfolio-title">
+                                
+                                        </div>
+                                        <div class="portfolio-tags">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filtr-item" data-category="web" data-sort="small" id="SEPTA">
+                                    <div class="portfolio-project-container">
+                                        <div class="portfolio-cover-image">
+                                
+                                        </div>
+                                        <div class="portfolio-title">
+                                
+                                        </div>
+                                        <div class="portfolio-tags">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filtr-item" data-category="print" data-sort="small" id="BookCovers">
+                                    <div class="portfolio-project-container">
+                                        <div class="portfolio-cover-image">
+                                
+                                        </div>
+                                        <div class="portfolio-title">
+                                
+                                        </div>
+                                        <div class="portfolio-tags">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filtr-item" data-category="branding, print" data-sort="small" id="ThinkOutsideBlock">
+                                    <div class="portfolio-project-container">
+                                        <div class="portfolio-cover-image">
+                                
+                                        </div>
+                                        <div class="portfolio-title">
+                                
+                                        </div>
+                                        <div class="portfolio-tags">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filtr-item" data-category="branding, web" data-sort="small"id="HappySunshine">
+                                    <div class="portfolio-project-container">
+                                        <div class="portfolio-cover-image">
+                                
+                                        </div>
+                                        <div class="portfolio-title">
+                                
+                                        </div>
+                                        <div class="portfolio-tags">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filtr-item" data-category="branding, web" data-sort="big" id="NBW">
+                                    <div class="portfolio-project-container">
+                                        <div class="portfolio-cover-image">
+                                
+                                        </div>
+                                        <div class="portfolio-title">
+                                
+                                        </div>
+                                        <div class="portfolio-tags">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                
+                    </div>
+                
+                   
+                
+                   
+                   
+                    
+                </section>
+    <section id="project-template">
+                        <div id="template-hero">
+                            <div id="template-hero-container">
+                                <div id="template-hero-text">
+                                    <h1>Mythos</h1>
+                                    <h3>Experimental Publication</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="project-template-container">
+                            <div id="summary">
+                                <div id="components-container">
+                                    <h4>Components</h4>
+                                    <ul>
+                                        <li><p>Logo Design</p</li>
+                                        <li><p>24 pages bound in coptic bind</p></li>
+                                        <li><p>Die-cut pages</p></li>
+                                    </ul>
+                                </div>
+                                <div id="description-container">
+                                    <h4>Description</h4>
+                                    <p>Mythos is an experimental publication which seeks to elevate poetry to the world of visual art through elegant typographic form. It is partly an anthology of the greatest poems and essays on poetic theory including writers like Shakespeare, Marcus Aurelius, Ralph Waldo Emerson, and Walt Whitman, as well as excerpts from the Bible and the Vedas. By peering through the die-cut holes in the page, the reader can trace the soul of language which connects all these writings from the origins of civilization to the current day. Each page exists as a work of art on its own, and yet leads into the next through the holes in its surface; every page exists in constant conversation with the whole publication. As the climatic poetic essay in the middle of Mythos states in the reveal of a gate fold, “Consciousness is formed from the dialogue of people.”  </p>
+                                </div>
+                            </div>
+                            <div id="process">
+                                <div id="process-imgs">
+                                    <div id="process-img-1"></div>
+                                    <div id="process-img-2"></div>
+                                </div>
+                                <div id="process-type">
+                                    <h4>Process</h4>
+                                    <p>The journey with Mythos began first with curating a collection of poetry that focused on language and mysticism. Some included favorited poets and philosphers, some was commissioned, and some was written by me. I arranged the poems into three sections, the origin of language, the consciousness of language, and the providence of language. The holes die-cut into the pages become bigger as you read, symbolizing the idea of the soul’s journey from birth to death. As poetry is an intimate experience between poet to reader, the journey of language and the soul are intertwined, just as each poem intertwines into the next in the interaction of the holes between pages.</p>
+                                </div>
+                                
+                            </div>
+                            <div id="brand-guide">
+                                <div id="brand-guide-image"></div>
+                            </div>
+                            <div id="project-gallery">
+                                <ul>
+                                    <li class="project-image" id="image-1">
+                    
+                                    </li>
+                                    <li class="project-image" id="image-2">
+                                        
+                                    </li>
+                                    <li class="project-image" id="image-3">
+                                        
+                                    </li>
+                                    <li class="project-image" id="image-4">
+                                        
+                                    </li>
+                                    <li class="project-gif" id="gif">
+                                        
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        </div> 
+                        
+                    </section>
+                       
+    
 <script src="js/scripts-min.js"></script>
+
+
 
 </body>
 

@@ -10,7 +10,32 @@ h1,h2,h3,h4,h5{
     padding: 0;
 }
 
+h1{
+    font-size: 5em;
+}
+
+h3{
+    font-size: 2em;
+    font-weight: 500;
+}
+
+h4{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+h5{
+    font-size: 1em;
+    font-weight: 500; 
+}
+
+h6{
+    font-size: 1em;
+    font-weight: 200; 
+}
+
 p{
     padding: 0;
     margin: 0;
+    font-size: 0.88em;
 }
