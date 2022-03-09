@@ -25,6 +25,14 @@
       "oAP" : "\/deploy\/about.html",
       "oF" : 0
     },
+    "\/deploy\/contact_module.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/contact_module.html",
+      "oF" : 0
+    },
     "\/deploy\/contact.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -964,6 +972,14 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/deploy\/project_template.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/project_template.html",
+      "oF" : 0
+    },
     "\/dev\/about.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -972,29 +988,13 @@
       "oAP" : "\/deploy\/about.html",
       "oF" : 2
     },
-    "\/dev\/contact.kit" : {
+    "\/dev\/contact_module.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/contact.html",
+      "oAP" : "\/deploy\/contact_module.html",
       "oF" : 2
-    },
-    "\/dev\/content\/about-content.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/about-content.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/contact-content.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/contact-content.html",
-      "oF" : 0
     },
     "\/dev\/content\/portfolio_controls.kit" : {
       "cB" : 0,
@@ -1018,14 +1018,6 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/portfolio_hero.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/project_template.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/project_template.html",
       "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
@@ -1079,6 +1071,17 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/dev\/js\/projects.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/dev\/js\/projects-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/dev\/js\/scripts.js" : {
       "bF" : 4,
       "ft" : 64,
@@ -1089,6 +1092,14 @@
       "oF" : 2,
       "sC" : 3,
       "tS" : 0
+    },
+    "\/dev\/project_template.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/project_template.html",
+      "oF" : 2
     },
     "\/dev\/scss\/base\/_base.scss" : {
       "aP" : 0,
@@ -1175,6 +1186,81 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/components\/_navigation.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/grids\/_all_filter.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/grids\/_all_filter.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/grids\/_branding_filter.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/grids\/_branding_filter.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/grids\/_exhibit_filter.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/grids\/_exhibit_filter.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/grids\/_print_filter.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/grids\/_print_filter.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/grids\/_web_filter.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/grids\/_web_filter.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
