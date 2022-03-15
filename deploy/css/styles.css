@@ -596,33 +596,33 @@ footer > div ul li a:visited:active {
   opacity: 0.35;
   background-image: linear-gradient(to top, rgba(255, 0, 0, 0), black);
 }
-#portfolio-hero #portfolio-hero-container #portfolio-hero-image-container .carousel {
+#portfolio-hero #portfolio-hero-container #portfolio-hero-image-container #hero-carousel {
   color: #170724;
 }
-#portfolio-hero #portfolio-hero-container #portfolio-hero-image-container .carousel .carousel__slide {
+#portfolio-hero #portfolio-hero-container #portfolio-hero-image-container #hero-carousel .carousel__slide {
   background-position: center;
   background-size: cover;
   height: 100vh;
   width: 100vw;
 }
-#portfolio-hero #portfolio-hero-container #portfolio-hero-image-container .carousel .carousel__slide a:link, #portfolio-hero #portfolio-hero-container #portfolio-hero-image-container .carousel .carousel__slide a:visited {
+#portfolio-hero #portfolio-hero-container #portfolio-hero-image-container #hero-carousel .carousel__slide a:link, #portfolio-hero #portfolio-hero-container #portfolio-hero-image-container #hero-carousel .carousel__slide a:visited {
   height: 100%;
   width: 100%;
   display: inline-block;
 }
-#portfolio-hero #portfolio-hero-container #portfolio-hero-image-container .carousel .carousel__dots {
+#portfolio-hero #portfolio-hero-container #portfolio-hero-image-container #hero-carousel .carousel__dots {
   display: none;
 }
-#portfolio-hero #portfolio-hero-container #portfolio-hero-image-container .carousel button {
+#portfolio-hero #portfolio-hero-container #portfolio-hero-image-container #hero-carousel button {
   z-index: 6;
 }
-#portfolio-hero #portfolio-hero-container #portfolio-hero-image-container .carousel #gallery-1 {
+#portfolio-hero #portfolio-hero-container #portfolio-hero-image-container #hero-carousel #gallery-1 {
   background-image: url("../img/Mythos/Mythos-CoverImage.jpg");
 }
-#portfolio-hero #portfolio-hero-container #portfolio-hero-image-container .carousel #gallery-2 {
+#portfolio-hero #portfolio-hero-container #portfolio-hero-image-container #hero-carousel #gallery-2 {
   background-image: url("../img/NBW/NBW-CoverImage.jpg");
 }
-#portfolio-hero #portfolio-hero-container #portfolio-hero-image-container .carousel #gallery-3 {
+#portfolio-hero #portfolio-hero-container #portfolio-hero-image-container #hero-carousel #gallery-3 {
   background-image: url("../img/NotAnExhibit/NotAnExhibit-CoverImage.jpg");
 }
 
@@ -647,6 +647,7 @@ footer > div ul li a:visited:active {
   padding: 5% 5% 3% 5%;
 }
 #portfolio-controls ul li a {
+  padding: 15px;
   color: #000;
   text-decoration: none;
   font-size: 1em;
@@ -655,6 +656,10 @@ footer > div ul li a:visited:active {
   #portfolio-controls ul li a {
     font-size: 1.25em;
   }
+}
+#portfolio-controls ul li a:hover {
+  color: #F2633F;
+  transition: 0.25s;
 }
 
 #lines {
@@ -683,6 +688,400 @@ footer > div ul li a:visited:active {
   #lines .standard .accent {
     width: 100px;
   }
+}
+
+#project-template hr {
+  grid-area: hr;
+  margin-top: 10%;
+  border-top: 2.5pt;
+  border-color: #C4C4C4;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+#project-template p {
+  padding-top: 10px;
+  font-size: 1em;
+  line-height: 150%;
+  font-weight: 300;
+}
+#project-template h4 {
+  font-weight: 600;
+}
+#project-template #template-hero {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+#project-template #template-hero #template-tint {
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background-image: linear-gradient(to top, rgba(255, 0, 0, 0), black);
+}
+#project-template #template-hero #template-hero-container #template-hero-text {
+  padding: 10%;
+}
+@media (min-width: 768px) {
+  #project-template #template-hero #template-hero-container #template-hero-text {
+    padding: 5%;
+  }
+}
+#project-template #template-hero #template-hero-container #template-hero-text h3 {
+  position: absolute;
+  margin-top: -85vh;
+  display: flex;
+  z-index: 200;
+  color: #fff;
+  font-size: 1.5em;
+}
+@media (min-width: 1024px) {
+  #project-template #template-hero #template-hero-container #template-hero-text h3 {
+    font-size: 2em;
+  }
+}
+#project-template #template-hero #template-hero-container #template-hero-text h1 {
+  position: absolute;
+  margin-top: -80vh;
+  display: flex;
+  z-index: 200;
+  color: #fff;
+  font-size: 3em;
+}
+@media (min-width: 1024px) {
+  #project-template #template-hero #template-hero-container #template-hero-text h1 {
+    font-size: 4em;
+  }
+}
+#project-template #project-template-container #summary {
+  padding: 65px 50px 0px 100px;
+  display: grid;
+  gap: 20px;
+  grid-template-areas: "components" "description" "hr";
+}
+@media (min-width: 1024px) {
+  #project-template #project-template-container #summary {
+    grid-template-columns: 50% auto;
+    grid-template-areas: "components description" "hr hr";
+  }
+}
+#project-template #project-template-container #summary #components-container {
+  grid-area: components;
+}
+#project-template #project-template-container #summary #description-container {
+  grid-area: description;
+}
+@media (min-width: 1200px) {
+  #project-template #project-template-container #summary #description-container {
+    width: 500px;
+  }
+}
+#project-template #project-template-container #process {
+  margin-top: 65px;
+  padding: 0px 50px 0px 100px;
+  display: grid;
+  gap: 20px;
+  grid-template-areas: "process" "img";
+}
+@media (min-width: 1024px) {
+  #project-template #project-template-container #process {
+    grid-template-columns: 50% auto;
+    grid-template-areas: "img process";
+  }
+}
+#project-template #project-template-container #process #process-imgs {
+  gap: 20px;
+  grid-area: img;
+  display: grid;
+  grid-template-rows: repeat(2, 275px);
+  grid-template-areas: "process-1" "process-2";
+}
+@media (min-width: 768px) {
+  #project-template #project-template-container #process #process-imgs {
+    grid-template-rows: repeat(1, 275px);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "process-1 process-2";
+  }
+}
+@media (min-width: 1024px) {
+  #project-template #project-template-container #process #process-imgs {
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, 275px);
+    width: 90%;
+    grid-template-areas: "process-1" "process-2";
+  }
+}
+@media (min-width: 1200px) {
+  #project-template #project-template-container #process #process-imgs {
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, 400px);
+    width: 90%;
+    grid-template-areas: "process-1" "process-2";
+  }
+}
+#project-template #project-template-container #process #process-imgs #process-img-1 {
+  grid-area: process-1;
+  background-size: cover;
+  background-position: center;
+}
+#project-template #project-template-container #process #process-imgs #process-img-2 {
+  grid-area: process-2;
+  background-size: cover;
+  background-position: center;
+}
+#project-template #project-template-container #process #process-type {
+  grid-area: process;
+}
+@media (min-width: 1200px) {
+  #project-template #project-template-container #process #process-type {
+    width: 500px;
+  }
+}
+#project-template #project-template-container #process hr {
+  grid-area: hr;
+}
+#project-template #project-template-container #brand-guide {
+  margin-top: 65px;
+  margin-bottom: 65px;
+}
+#project-template #project-template-container #brand-guide #brand-guide-image {
+  margin-top: 20px;
+  width: 100vw;
+  height: 350px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  #project-template #project-template-container #brand-guide #brand-guide-image {
+    height: 550px;
+  }
+}
+@media (min-width: 1024px) {
+  #project-template #project-template-container #brand-guide #brand-guide-image {
+    height: 700px;
+  }
+}
+@media (min-width: 1200px) {
+  #project-template #project-template-container #brand-guide #brand-guide-image {
+    height: 900px;
+    width: 90vw;
+  }
+}
+#project-template #project-template-container #brand-guide h4 {
+  padding: 0px 50px 0px 100px;
+}
+#project-template #project-template-container #project-gallery {
+  margin-top: 65px;
+  padding: 0px 50px 65px 100px;
+}
+#project-template #project-template-container #project-gallery #video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#project-template #project-template-container #project-gallery #video-container #myVideo {
+  height: auto;
+  width: 90vw;
+}
+@media (min-width: 1200px) {
+  #project-template #project-template-container #project-gallery #video-container #myVideo {
+    width: auto;
+    height: 100vh;
+  }
+}
+#project-template #project-template-container #project-gallery ul {
+  display: grid;
+  gap: 20px;
+  grid-template-rows: repeat(4, 324px);
+  grid-template-areas: "g1" "g2" "g3" "g4";
+}
+@media (min-width: 768px) {
+  #project-template #project-template-container #project-gallery ul {
+    grid-template-areas: "g1 g2" "g3 g4";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 400px);
+  }
+}
+@media (min-width: 1024px) {
+  #project-template #project-template-container #project-gallery ul {
+    grid-template-rows: repeat(2, 500px);
+  }
+}
+@media (min-width: 1200px) {
+  #project-template #project-template-container #project-gallery ul {
+    grid-template-rows: repeat(2, 800px);
+  }
+}
+#project-template #project-template-container #project-gallery ul li {
+  background-position: center;
+  background-size: cover;
+}
+#project-template #project-template-container #project-gallery ul #image-1 {
+  grid-area: g1;
+}
+#project-template #project-template-container #project-gallery ul #image-2 {
+  grid-area: g2;
+}
+#project-template #project-template-container #project-gallery ul #image-3 {
+  grid-area: g3;
+}
+#project-template #project-template-container #project-gallery ul #image-4 {
+  grid-area: g4;
+}
+
+#about-page {
+  background-color: #2C2C30;
+  color: #fff;
+}
+#about-page hr {
+  border-bottom: #8F8F8F;
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  #about-page hr {
+    display: none;
+  }
+}
+#about-page #about-hero {
+  padding: 100px 40px 0% 40px;
+}
+@media (min-width: 1024px) {
+  #about-page #about-hero {
+    padding-top: 150px;
+  }
+}
+@media (min-width: 1024px) {
+  #about-page #about-hero #about-hero-container {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "text image";
+  }
+}
+#about-page #about-hero #about-hero-container #about-image {
+  background-image: url("../img/About/About-Image.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  width: auto;
+}
+@media (min-width: 1024px) {
+  #about-page #about-hero #about-hero-container #about-image {
+    grid-area: image;
+    margin-left: 30%;
+  }
+}
+#about-page #about-hero #about-hero-container #about-text {
+  margin-top: 20px;
+}
+@media (min-width: 1024px) {
+  #about-page #about-hero #about-hero-container #about-text {
+    width: 600px;
+    grid-area: text;
+  }
+}
+#about-page #about-hero #about-hero-container #about-text #about-header {
+  font-size: 2.5em;
+}
+#about-page #about-hero #about-hero-container #about-text #about-paragraph {
+  padding-top: 20px;
+  font-weight: 300;
+  line-height: 18px;
+  display: grid;
+  gap: 20px;
+}
+#about-page #about-resume {
+  padding: 10% 40px 0% 40px;
+}
+@media (min-width: 768px) {
+  #about-page #about-resume #about-resume-container {
+    display: grid;
+    grid-auto-columns: 50% auto;
+    grid-template-areas: "education skills";
+  }
+}
+@media (min-width: 768px) {
+  #about-page #about-resume #about-resume-container #education-container {
+    grid-area: education;
+  }
+}
+#about-page #about-resume #about-resume-container #education-container #education-list {
+  padding-top: 20px;
+}
+#about-page #about-resume #about-resume-container #education-container h6 {
+  margin: 0;
+  line-height: 30px;
+}
+#about-page #about-resume #about-resume-container #education-container #acknowledgements-list {
+  padding-top: 20px;
+}
+#about-page #about-resume #about-resume-container #skills-container {
+  padding-top: 20px;
+}
+@media (min-width: 768px) {
+  #about-page #about-resume #about-resume-container #skills-container {
+    padding-top: 0px;
+    gap: 20px;
+    grid-area: skills;
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "header header" "tech design";
+  }
+}
+#about-page #about-resume #about-resume-container #skills-container h3 {
+  grid-area: header;
+}
+#about-page #about-resume #about-resume-container #skills-container #technology-list {
+  grid-area: tech;
+  padding-top: 20px;
+}
+#about-page #about-resume #about-resume-container #skills-container h6 {
+  margin: 0;
+  line-height: 30px;
+}
+#about-page #about-resume #about-resume-container #skills-container #design-list {
+  grid-area: design;
+  padding-top: 20px;
+}
+#about-page #contact-buttons {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: auto 500px auto;
+  grid-template-areas: ". button-1 ." ". button-2 .";
+  gap: 20px;
+}
+@media (min-width: 768px) {
+  #about-page #contact-buttons {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+#about-page #contact-buttons a:link, #about-page #contact-buttons a:visited {
+  padding: 25px;
+  width: 80%;
+  text-decoration: none;
+  color: #F2633F;
+  border: #F2633F 2px solid;
+  font-size: 1.25em;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #about-page #contact-buttons a:link, #about-page #contact-buttons a:visited {
+    width: 250px;
+  }
+}
+#about-page #contact-buttons a:hover, #about-page #contact-buttons a:active {
+  background-color: #F2633F;
+  color: #fff;
+  transition: 0.25s;
+}
+#about-page #contact-buttons #link-1 {
+  grid-area: button-1;
+}
+#about-page #contact-buttons #link-2 {
+  grid-area: button-2;
 }
 
 #portfolio-gallery {
@@ -815,6 +1214,6 @@ footer > div ul li a:visited:active {
 #portfolio-gallery #filter-container #gallery li .portfolio-project-container .portfolio-tags {
   grid-area: tag;
   text-align: left;
-  font-size: 0.85em;
+  font-size: 0.9em;
   color: #8F8F8F;
 }

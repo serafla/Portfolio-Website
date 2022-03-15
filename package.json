@@ -10,6 +10,7 @@
   "dependencies": {
     "@fancyapps/ui": "^4.0.26",
     "filterizr": "^2.2.4",
-    "gsap": "file:gsap-bonus.tgz"
+    "gsap": "file:gsap-bonus.tgz",
+    "shufflejs": "^6.0.0"
   }
 }

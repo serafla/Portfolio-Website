@@ -1,0 +1,176 @@
+#about-page{
+    background-color: $charcoal;
+    color: $white;
+
+    hr{
+        // color: $gray;
+        border-bottom: $gray;
+        margin-top: 20px;
+
+        @include md{
+            display: none;
+        }
+    }
+
+    #about-hero{
+        padding: 100px 40px 0% 40px;
+       
+        // padding-top: 15vh;
+
+        @include lg{
+            padding-top: 150px;
+        }
+
+        #about-hero-container{
+    
+            @include lg{
+                display: grid;
+                grid-template-columns: 50% auto;
+                grid-template-areas: "text image";
+            }
+
+            #about-image{
+                background-image: url("../img/About/About-Image.jpeg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 70vh;
+                width: auto;
+
+                @include lg{
+                    grid-area: image;
+                    margin-left: 30%;
+                }
+            }
+
+            #about-text{
+                margin-top: 20px;
+                @include lg{
+                    width: 600px;
+                    grid-area: text;
+                }
+                #about-header{
+                    font-size: 2.5em;
+                }
+                #about-paragraph{
+                    padding-top: 20px;
+                    font-weight: 300;
+                    line-height: 18px;
+                    display: grid;
+                    gap: 20px;
+                }
+            }
+        }
+    }
+
+    #about-resume{
+        padding: 10% 40px 0% 40px; 
+
+        #about-resume-container{
+            @include md{
+                display: grid;
+                grid-auto-columns: 50% auto;
+                grid-template-areas: "education skills";
+            }
+            #education-container{
+     
+                @include md{
+                    grid-area: education;
+                }
+                
+                #education-list{
+                    padding-top: 20px;
+                }
+                h6{
+                    margin: 0;
+                    line-height: 30px;
+                }
+                #acknowledgements-list{
+                    padding-top: 20px;
+                }
+            }
+
+            #skills-container{
+                padding-top: 20px;
+                @include md{
+                    padding-top: 0px;
+                    gap: 20px;
+                    grid-area: skills;
+                    display: grid;
+                    grid-template-columns: 50% auto;
+                    grid-template-areas: "header header"
+                    "tech design";
+                }
+                
+                h3{
+                    grid-area: header;
+                }
+        
+                    #technology-list{
+                        grid-area: tech;
+                        padding-top: 20px;
+                    }
+                    h6{
+                        margin: 0;
+                        line-height: 30px;
+                    }
+                    #design-list{
+                        grid-area: design;
+                        padding-top: 20px;
+                    }
+                
+            }
+        }
+    
+       
+    }
+        
+       
+
+       
+    #contact-buttons{
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: auto 500px auto;
+        grid-template-areas: ". button-1 ."
+        ". button-2 .";
+        gap: 20px;
+
+        @include md{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        a:link, a:visited{
+            padding: 25px;
+            width: 80%;
+            text-decoration: none;
+            color: $orange;
+            border: $orange 2px solid;
+            font-size: 1.25em;
+            text-align: center;
+
+            @include md{
+                width: 250px;
+            }
+        }
+
+        a:hover, a:active{
+            background-color: $orange;
+            color: $white;
+            transition: 0.25s;
+        }
+
+        #link-1{
+            grid-area: button-1;
+        }
+
+        #link-2{
+            grid-area: button-2;
+        }
+
+    }
+    
+
+    
+}

@@ -1,0 +1,319 @@
+#project-template{
+    hr{
+        grid-area: hr;
+        margin-top: 10%;
+        border-top: 2.5pt;
+        border-color: $light-gray;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+    p{
+        padding-top: 10px;
+        font-size: 1em;
+        line-height: 150%;
+        font-weight: 300;
+    }
+
+    h4{
+        font-weight: 600;
+    }
+    #template-hero{
+            width: 100vw;
+            height: 100vh;
+            background-size: cover;
+            background-position: center ;
+
+        #template-tint{
+                width: 100%;
+                height: 100%;
+                opacity: 0.6;
+                background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(0, 0, 0));
+            }
+        #template-hero-container{
+
+            #template-hero-text{
+                padding: 10%;
+                
+                @include md{
+                    padding: 5%;
+                }
+                h3{
+                    // background-color: $orange;
+                    // padding: 2%;
+                    position: absolute;
+                    margin-top: -85vh;
+                    display: flex;
+                    z-index: 200;
+                    color: $white;
+                    font-size: 1.5em;
+
+                    @include lg{
+                        font-size: 2em;
+                    }
+                }
+    
+                h1{
+                    // background-color: $orange;
+                    // padding: 2%;
+                    position: absolute;
+                    margin-top: -80vh;
+                    display: flex;
+                    z-index: 200;
+                    color: $white;
+                    font-size: 3em;
+
+                    @include lg{
+                        font-size: 4em;
+                    }
+                }
+            
+            }
+        }
+    }
+
+    #project-template-container{
+        #summary{
+           padding: 65px 50px 0px 100px;
+           display: grid;
+           gap: 20px;
+           grid-template-areas: "components"
+           "description"
+           "hr";
+
+           @include lg{
+            grid-template-columns: 50% auto;
+           grid-template-areas: 
+           "components description"
+           "hr hr";
+           }
+
+           #components-container{
+            grid-area: components;
+           }
+
+
+           #description-container{
+            grid-area: description;
+
+            @include xl{
+                width: 500px;
+            }
+           
+           }
+        }
+
+        #process{
+            margin-top: 65px;
+            padding: 0px 50px 0px 100px;
+            display: grid;
+            gap: 20px;
+            grid-template-areas: "process"
+            "img";
+
+            @include lg{
+                grid-template-columns: 50% auto;
+                grid-template-areas: "img process";
+            }
+
+            #process-imgs{
+                gap: 20px;
+                grid-area: img;
+                display: grid;
+                grid-template-rows: repeat(2, 275px);
+                grid-template-areas: "process-1"
+                "process-2";
+
+                @include md{
+                    grid-template-rows: repeat(1, 275px);
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-areas: "process-1 process-2";
+                }
+
+                @include lg{
+                    grid-template-columns: none;
+                    grid-template-rows: repeat(2, 275px);
+                    width: 90%;
+                    grid-template-areas: "process-1"
+                    "process-2";
+                }
+
+                @include xl{
+                    grid-template-columns: none;
+                    grid-template-rows: repeat(2, 400px);
+                    width: 90%;
+                    grid-template-areas: "process-1"
+                    "process-2";
+                }
+
+                #process-img-1{
+                    grid-area: process-1;
+                    background-size: cover;
+                    background-position: center ;
+                    // background-image: url(../img/Mythos/Mythos-Sketch-1.png);
+                }
+                #process-img-2{
+                    grid-area: process-2;
+                    background-size: cover;
+                    background-position: center ;
+                    // background-image: url(../img/Mythos/Mythos-Sketch-2.jpg);
+                }
+            }
+
+            #process-type{
+                grid-area: process;
+
+                @include xl{
+                    width: 500px;
+                }
+            
+            }
+
+            hr{
+                grid-area: hr;
+            }
+        }
+
+        #brand-guide{
+            margin-top: 65px;
+            margin-bottom: 65px;
+
+            #brand-guide-image{
+                margin-top: 20px;
+                width: 100vw;
+                height: 350px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center ;
+                // background-image: url(../img/Mythos/Mythos-Branding.jpg);
+
+                @include md{
+                    height: 550px;
+                }
+
+                @include lg{
+                    height: 700px;
+                }
+
+                @include xl{
+                    height: 900px;
+                    width: 90vw;
+                }
+            }
+
+            h4{
+                padding: 0px 50px 0px 100px;  
+            }
+        }
+
+        #project-gallery{
+            margin-top: 65px;
+            padding: 0px 50px 65px 100px;
+
+            #video-container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                #myVideo{
+                    height: auto;
+                    width: 90vw;
+                    @include xl{
+                        width: auto;
+                        height: 100vh;
+                    }
+                }
+            }
+
+
+
+            ul{
+                display: grid;
+                gap: 20px;
+                grid-template-rows: repeat(4, 324px);
+                grid-template-areas: 
+                "g1"
+                "g2"
+                "g3"
+                "g4";
+                
+                @include md {
+                    grid-template-areas: 
+                        "g1 g2"
+                        "g3 g4";
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(2, 400px);
+                }
+
+                @include lg {
+                    grid-template-rows: repeat(2, 500px);
+                }
+
+                @include xl {
+                    grid-template-rows: repeat(2, 800px);
+                }
+               
+                li {
+                    background-position: center;
+                    background-size: cover;
+                }
+                #image-1{
+                    grid-area: g1;
+                    }
+                #image-2{
+                    grid-area: g2;
+                    }
+
+                // .project-gif{
+                //     grid-area: gif;
+                // }
+                
+                // #project-carousel-wrapper{
+                //     grid-area: carousel;
+
+                //     #project-carousel{
+                //         height: 95%;
+
+                //         // .carousel__slide{
+                //         //     background-position: center;
+                //         //     background-size: cover;
+                   
+                //         // }
+                //         // .carousel__track{
+                //         //     height: 100%;
+                //         //     width: 100%;
+                //         // }
+
+                //         // .carousel__dots{
+                //         //     display: none;
+                //         // }
+
+                        
+    
+                //         // #project-gallery-1 {
+                //         //     background-color: $gray;
+                //         // }
+                
+                //         // #project-gallery-2 {
+                //         //     background-color: $orange;
+                //         // }
+                
+                //         // #project-gallery-3 {
+                //         //     background-color: $black;
+                //         // }
+                //     }
+                // }
+
+                #image-3{
+                    grid-area: g3;
+                }
+                #image-4{
+                    grid-area: g4;
+                }
+            }
+            
+
+           
+        }
+    }
+}
