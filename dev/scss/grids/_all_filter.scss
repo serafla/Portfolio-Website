@@ -26,89 +26,28 @@
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(8, 300px);
                 gap: 40px;
-                grid-template-areas: 
-                "g1 g2"
-                "g1 g3"
-                "g5 g4"
-                "g6 g4"
-                "g7 g8"
-                "g7 g9"
-                "g11 g10"
-                "g12 g10";
+                // grid-template-areas: 
+                // "g1 g2"
+                // "g1 g3"
+                // "g5 g4"
+                // "g6 g4"
+                // "g7 g8"
+                // "g7 g9"
+                // "g11 g10"
+                // "g12 g10";
+
+                .big{
+                    grid-row-end:span 2;
+                }
 
             }
 
-            li{
-                // background-color: $black;
+            .filtr-item{
+                 // background-color: $black;
                 // height: 300px;
                 width: 100%;
                 // border: 1px solid red;
 
-                &:nth-child(1){
-                    @include lg{
-                        grid-area: g1 ;
-                    }
-                }
-
-                &:nth-child(2){
-                    @include lg{
-                        grid-area: g2 ;
-                    }
-                }
-                &:nth-child(3){
-                    @include lg{
-                        grid-area: g3 ;
-                    }
-                }
-
-                &:nth-child(4){
-                    @include lg{
-                        grid-area: g4 ;
-                    }
-                }
-
-                &:nth-child(5){
-                    @include lg{
-                        grid-area: g5 ;
-                    }
-                }
-                &:nth-child(6){
-                    @include lg{
-                        grid-area: g6 ;
-                    }
-                }
-                &:nth-child(7){
-                    @include lg{
-                        grid-area: g7 ;
-                    }
-                }
-
-                &:nth-child(8){
-                    @include lg{
-                        grid-area: g8 ;
-                    }
-                }
-                &:nth-child(9){
-                    @include lg{
-                        grid-area: g9 ;
-                    }
-                }
-                &:nth-child(10){
-                    @include lg{
-                        grid-area: g10 ;
-                    }
-                }
-
-                &:nth-child(11){
-                    @include lg{
-                        grid-area: g11;
-                    }
-                }
-                &:nth-child(12){
-                    @include lg{
-                        grid-area: g12 ;
-                    }
-                }
 
                 a:link, a:visited{
                     color: $black;
@@ -161,6 +100,8 @@
                     }
                 }
             }
+               
+            
  
 
     }

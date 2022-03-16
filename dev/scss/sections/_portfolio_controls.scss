@@ -15,14 +15,14 @@
         }
     
     
-        ul{
+        .filter-button{
             grid-area: controls;
             display: flex;
             justify-content: space-between;
             padding: 5% 5% 3% 5%;
     
            
-            li {
+          
                 
                 a{
                     padding: 15px;
@@ -44,8 +44,7 @@
                 }
 
                 
-                
-            }
+           
             
         }
     }

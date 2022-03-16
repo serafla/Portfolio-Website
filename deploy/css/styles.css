@@ -642,24 +642,24 @@ footer > div ul li a:visited:active {
     grid-template-areas: ". controls ." ". lines .";
   }
 }
-#portfolio-controls ul {
+#portfolio-controls .filter-button {
   grid-area: controls;
   display: flex;
   justify-content: space-between;
   padding: 5% 5% 3% 5%;
 }
-#portfolio-controls ul li a {
+#portfolio-controls .filter-button a {
   padding: 15px;
   color: #000;
   text-decoration: none;
   font-size: 1em;
 }
 @media (min-width: 768px) {
-  #portfolio-controls ul li a {
+  #portfolio-controls .filter-button a {
     font-size: 1.25em;
   }
 }
-#portfolio-controls ul li a:hover {
+#portfolio-controls .filter-button a:hover {
   color: #F2633F;
   transition: 0.25s;
 }
@@ -1149,108 +1149,50 @@ footer > div ul li a:visited:active {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(8, 300px);
     gap: 40px;
-    grid-template-areas: "g1 g2" "g1 g3" "g5 g4" "g6 g4" "g7 g8" "g7 g9" "g11 g10" "g12 g10";
+  }
+  #portfolio-gallery #filter-container #gallery .big {
+    grid-row-end: span 2;
   }
 }
-#portfolio-gallery #filter-container #gallery li {
+#portfolio-gallery #filter-container #gallery .filtr-item {
   width: 100%;
 }
-@media (min-width: 1024px) {
-  #portfolio-gallery #filter-container #gallery li:nth-child(1) {
-    grid-area: g1;
-  }
-}
-@media (min-width: 1024px) {
-  #portfolio-gallery #filter-container #gallery li:nth-child(2) {
-    grid-area: g2;
-  }
-}
-@media (min-width: 1024px) {
-  #portfolio-gallery #filter-container #gallery li:nth-child(3) {
-    grid-area: g3;
-  }
-}
-@media (min-width: 1024px) {
-  #portfolio-gallery #filter-container #gallery li:nth-child(4) {
-    grid-area: g4;
-  }
-}
-@media (min-width: 1024px) {
-  #portfolio-gallery #filter-container #gallery li:nth-child(5) {
-    grid-area: g5;
-  }
-}
-@media (min-width: 1024px) {
-  #portfolio-gallery #filter-container #gallery li:nth-child(6) {
-    grid-area: g6;
-  }
-}
-@media (min-width: 1024px) {
-  #portfolio-gallery #filter-container #gallery li:nth-child(7) {
-    grid-area: g7;
-  }
-}
-@media (min-width: 1024px) {
-  #portfolio-gallery #filter-container #gallery li:nth-child(8) {
-    grid-area: g8;
-  }
-}
-@media (min-width: 1024px) {
-  #portfolio-gallery #filter-container #gallery li:nth-child(9) {
-    grid-area: g9;
-  }
-}
-@media (min-width: 1024px) {
-  #portfolio-gallery #filter-container #gallery li:nth-child(10) {
-    grid-area: g10;
-  }
-}
-@media (min-width: 1024px) {
-  #portfolio-gallery #filter-container #gallery li:nth-child(11) {
-    grid-area: g11;
-  }
-}
-@media (min-width: 1024px) {
-  #portfolio-gallery #filter-container #gallery li:nth-child(12) {
-    grid-area: g12;
-  }
-}
-#portfolio-gallery #filter-container #gallery li a:link, #portfolio-gallery #filter-container #gallery li a:visited {
+#portfolio-gallery #filter-container #gallery .filtr-item a:link, #portfolio-gallery #filter-container #gallery .filtr-item a:visited {
   color: #000;
   text-decoration: none;
   height: 100%;
   width: 100%;
   display: inline-block;
 }
-#portfolio-gallery #filter-container #gallery li .portfolio-project-container {
+#portfolio-gallery #filter-container #gallery .filtr-item .portfolio-project-container {
   height: 100%;
   width: 100%;
   display: grid;
   grid-template-rows: auto 35px 30px;
   grid-template-areas: "image" "title" "tag";
 }
-#portfolio-gallery #filter-container #gallery li .portfolio-project-container .portfolio-cover-image {
+#portfolio-gallery #filter-container #gallery .filtr-item .portfolio-project-container .portfolio-cover-image {
   background-size: cover;
   background-position: center;
   grid-area: image;
 }
-#portfolio-gallery #filter-container #gallery li .portfolio-project-container .portfolio-cover-image:hover {
+#portfolio-gallery #filter-container #gallery .filtr-item .portfolio-project-container .portfolio-cover-image:hover {
   transform: scale(1.02);
   box-shadow: 0px 0px 20px -9px #000000;
   transition: 0.25s;
 }
-#portfolio-gallery #filter-container #gallery li .portfolio-project-container .portfolio-title {
+#portfolio-gallery #filter-container #gallery .filtr-item .portfolio-project-container .portfolio-title {
   padding-top: 15px;
   grid-area: title;
   text-align: left;
   font-size: 0.9em;
 }
 @media (min-width: 1024px) {
-  #portfolio-gallery #filter-container #gallery li .portfolio-project-container .portfolio-title {
+  #portfolio-gallery #filter-container #gallery .filtr-item .portfolio-project-container .portfolio-title {
     font-size: 1em;
   }
 }
-#portfolio-gallery #filter-container #gallery li .portfolio-project-container .portfolio-tags {
+#portfolio-gallery #filter-container #gallery .filtr-item .portfolio-project-container .portfolio-tags {
   grid-area: tag;
   text-align: left;
   font-size: 0.9em;
