@@ -77,20 +77,17 @@
            padding: 65px 50px 0px 100px;
            display: grid;
            gap: 20px;
-           grid-template-areas: "components"
+           grid-template-areas: 
            "description"
            "hr";
 
            @include lg{
             grid-template-columns: 50% auto;
            grid-template-areas: 
-           "components description"
+           "description ."
            "hr hr";
            }
 
-           #components-container{
-            grid-area: components;
-           }
 
 
            #description-container{
@@ -179,6 +176,8 @@
             margin-bottom: 65px;
 
             #brand-guide-image{
+                display: flex;
+                justify-content: center;
                 margin-top: 20px;
                 width: 100vw;
                 height: 350px;
@@ -195,10 +194,10 @@
                     height: 700px;
                 }
 
-                @include xl{
-                    height: 900px;
-                    width: 90vw;
-                }
+                // @include xl{
+                //     height: 900px;
+                //     width: 90vw;
+                // }
             }
 
             h4{

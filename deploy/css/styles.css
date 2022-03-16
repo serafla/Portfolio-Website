@@ -509,41 +509,43 @@ header > div #nav-container {
 /* =============
     Footer
 ============= */
-footer {
-  background-color: #fff;
-  display: grid;
-  grid-template-areas: ". footer .";
-  grid-template-columns: 10px auto 10px;
-  padding: 45px 0 40px;
-  text-align: center;
+footer hr {
+  margin-top: 10%;
+  border-top: 2.5pt;
+  border-color: #C4C4C4;
+  width: 80%;
+  display: flex;
+  justify-content: center;
 }
 footer > div {
-  grid-area: footer;
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-footer > div h1 {
-  font-size: 1.25rem;
+footer > div h5 {
+  font-size: 1em;
   margin-bottom: 10px;
-}
-footer > div h1 span {
-  color: #fff;
+  color: #F2633F;
 }
 footer > div ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 footer > div ul li {
   margin: 0 10px;
 }
 footer > div ul li a:link,
 footer > div ul li a:visited {
-  color: #000;
-  font-size: 1.875rem;
+  padding: 10px;
+  color: #F2633F;
+  font-size: 1.5em;
   transition: 0.25s;
 }
 footer > div ul li a:link:hover, footer > div ul li a:link:active,
 footer > div ul li a:visited:hover,
 footer > div ul li a:visited:active {
-  color: #fff;
+  color: #FFA48D;
 }
 
 /* =============
@@ -758,16 +760,13 @@ footer > div ul li a:visited:active {
   padding: 65px 50px 0px 100px;
   display: grid;
   gap: 20px;
-  grid-template-areas: "components" "description" "hr";
+  grid-template-areas: "description" "hr";
 }
 @media (min-width: 1024px) {
   #project-template #project-template-container #summary {
     grid-template-columns: 50% auto;
-    grid-template-areas: "components description" "hr hr";
+    grid-template-areas: "description ." "hr hr";
   }
-}
-#project-template #project-template-container #summary #components-container {
-  grid-area: components;
 }
 #project-template #project-template-container #summary #description-container {
   grid-area: description;
@@ -846,6 +845,8 @@ footer > div ul li a:visited:active {
   margin-bottom: 65px;
 }
 #project-template #project-template-container #brand-guide #brand-guide-image {
+  display: flex;
+  justify-content: center;
   margin-top: 20px;
   width: 100vw;
   height: 350px;
@@ -861,12 +862,6 @@ footer > div ul li a:visited:active {
 @media (min-width: 1024px) {
   #project-template #project-template-container #brand-guide #brand-guide-image {
     height: 700px;
-  }
-}
-@media (min-width: 1200px) {
-  #project-template #project-template-container #brand-guide #brand-guide-image {
-    height: 900px;
-    width: 90vw;
   }
 }
 #project-template #project-template-container #brand-guide h4 {
@@ -935,31 +930,50 @@ footer > div ul li a:visited:active {
   background-color: #2C2C30;
   color: #fff;
 }
-#about-page hr {
+@media (min-width: 1200px) {
+  #about-page {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". content .";
+  }
+}
+#about-page #about-page-container {
+  grid-area: content;
+  /* =============
+      Footer
+  ============= */
+}
+#about-page #about-page-container hr {
   border-bottom: #8F8F8F;
   margin-top: 20px;
 }
 @media (min-width: 768px) {
-  #about-page hr {
+  #about-page #about-page-container hr {
     display: none;
   }
 }
-#about-page #about-hero {
+#about-page #about-page-container #about-hero {
   padding: 100px 40px 0% 40px;
 }
 @media (min-width: 1024px) {
-  #about-page #about-hero {
+  #about-page #about-page-container #about-hero {
     padding-top: 150px;
   }
 }
+#about-page #about-page-container #about-hero #about-hero-container {
+  display: grid;
+  grid-template-areas: "image" "text";
+}
 @media (min-width: 1024px) {
-  #about-page #about-hero #about-hero-container {
+  #about-page #about-page-container #about-hero #about-hero-container {
     display: grid;
     grid-template-columns: 50% auto;
     grid-template-areas: "text image";
+    gap: 40px;
   }
 }
-#about-page #about-hero #about-hero-container #about-image {
+#about-page #about-page-container #about-hero #about-hero-container #about-image {
+  grid-area: image;
   background-image: url("../img/About/About-Image.jpeg");
   background-position: center;
   background-repeat: no-repeat;
@@ -967,61 +981,50 @@ footer > div ul li a:visited:active {
   height: 70vh;
   width: auto;
 }
-@media (min-width: 1024px) {
-  #about-page #about-hero #about-hero-container #about-image {
-    grid-area: image;
-    margin-left: 30%;
-  }
-}
-#about-page #about-hero #about-hero-container #about-text {
+#about-page #about-page-container #about-hero #about-hero-container #about-text {
+  grid-area: text;
   margin-top: 20px;
 }
-@media (min-width: 1024px) {
-  #about-page #about-hero #about-hero-container #about-text {
-    width: 600px;
-    grid-area: text;
-  }
-}
-#about-page #about-hero #about-hero-container #about-text #about-header {
+#about-page #about-page-container #about-hero #about-hero-container #about-text #about-header {
   font-size: 2.5em;
 }
-#about-page #about-hero #about-hero-container #about-text #about-paragraph {
+#about-page #about-page-container #about-hero #about-hero-container #about-text #about-paragraph {
   padding-top: 20px;
   font-weight: 300;
   line-height: 18px;
   display: grid;
   gap: 20px;
 }
-#about-page #about-resume {
+#about-page #about-page-container #about-resume {
   padding: 10% 40px 0% 40px;
 }
 @media (min-width: 768px) {
-  #about-page #about-resume #about-resume-container {
+  #about-page #about-page-container #about-resume #about-resume-container {
     display: grid;
     grid-auto-columns: 50% auto;
     grid-template-areas: "education skills";
   }
 }
 @media (min-width: 768px) {
-  #about-page #about-resume #about-resume-container #education-container {
+  #about-page #about-page-container #about-resume #about-resume-container #education-container {
     grid-area: education;
   }
 }
-#about-page #about-resume #about-resume-container #education-container #education-list {
+#about-page #about-page-container #about-resume #about-resume-container #education-container #education-list {
   padding-top: 20px;
 }
-#about-page #about-resume #about-resume-container #education-container h6 {
+#about-page #about-page-container #about-resume #about-resume-container #education-container h6 {
   margin: 0;
   line-height: 30px;
 }
-#about-page #about-resume #about-resume-container #education-container #acknowledgements-list {
+#about-page #about-page-container #about-resume #about-resume-container #education-container #acknowledgements-list {
   padding-top: 20px;
 }
-#about-page #about-resume #about-resume-container #skills-container {
+#about-page #about-page-container #about-resume #about-resume-container #skills-container {
   padding-top: 20px;
 }
 @media (min-width: 768px) {
-  #about-page #about-resume #about-resume-container #skills-container {
+  #about-page #about-page-container #about-resume #about-resume-container #skills-container {
     padding-top: 0px;
     gap: 20px;
     grid-area: skills;
@@ -1030,35 +1033,33 @@ footer > div ul li a:visited:active {
     grid-template-areas: "header header" "tech design";
   }
 }
-#about-page #about-resume #about-resume-container #skills-container h3 {
+#about-page #about-page-container #about-resume #about-resume-container #skills-container h3 {
   grid-area: header;
 }
-#about-page #about-resume #about-resume-container #skills-container #technology-list {
+#about-page #about-page-container #about-resume #about-resume-container #skills-container #technology-list {
   grid-area: tech;
-  padding-top: 20px;
 }
-#about-page #about-resume #about-resume-container #skills-container h6 {
+#about-page #about-page-container #about-resume #about-resume-container #skills-container h6 {
   margin: 0;
   line-height: 30px;
 }
-#about-page #about-resume #about-resume-container #skills-container #design-list {
+#about-page #about-page-container #about-resume #about-resume-container #skills-container #design-list {
   grid-area: design;
-  padding-top: 20px;
 }
-#about-page #contact-buttons {
-  margin-top: 40px;
+#about-page #about-page-container #contact-buttons {
+  margin-top: 60px;
   display: grid;
   grid-template-columns: auto 500px auto;
   grid-template-areas: ". button-1 ." ". button-2 .";
   gap: 20px;
 }
 @media (min-width: 768px) {
-  #about-page #contact-buttons {
+  #about-page #about-page-container #contact-buttons {
     display: flex;
     justify-content: space-evenly;
   }
 }
-#about-page #contact-buttons a:link, #about-page #contact-buttons a:visited {
+#about-page #about-page-container #contact-buttons a:link, #about-page #about-page-container #contact-buttons a:visited {
   padding: 25px;
   width: 80%;
   text-decoration: none;
@@ -1068,20 +1069,53 @@ footer > div ul li a:visited:active {
   text-align: center;
 }
 @media (min-width: 768px) {
-  #about-page #contact-buttons a:link, #about-page #contact-buttons a:visited {
+  #about-page #about-page-container #contact-buttons a:link, #about-page #about-page-container #contact-buttons a:visited {
     width: 250px;
   }
 }
-#about-page #contact-buttons a:hover, #about-page #contact-buttons a:active {
+#about-page #about-page-container #contact-buttons a:hover, #about-page #about-page-container #contact-buttons a:active {
   background-color: #F2633F;
   color: #fff;
   transition: 0.25s;
 }
-#about-page #contact-buttons #link-1 {
+#about-page #about-page-container #contact-buttons #link-1 {
   grid-area: button-1;
 }
-#about-page #contact-buttons #link-2 {
+#about-page #about-page-container #contact-buttons #link-2 {
   grid-area: button-2;
+}
+#about-page #about-page-container footer {
+  margin-top: 80px;
+}
+#about-page #about-page-container footer > div {
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#about-page #about-page-container footer > div h5 {
+  font-size: 1em;
+  margin-bottom: 10px;
+  color: #F2633F;
+}
+#about-page #about-page-container footer > div ul {
+  display: flex;
+  justify-content: space-around;
+}
+#about-page #about-page-container footer > div ul li {
+  margin: 0 10px;
+}
+#about-page #about-page-container footer > div ul li a:link,
+#about-page #about-page-container footer > div ul li a:visited {
+  padding: 10px;
+  color: #F2633F;
+  font-size: 1.5em;
+  transition: 0.25s;
+}
+#about-page #about-page-container footer > div ul li a:link:hover, #about-page #about-page-container footer > div ul li a:link:active,
+#about-page #about-page-container footer > div ul li a:visited:hover,
+#about-page #about-page-container footer > div ul li a:visited:active {
+  color: #FFA48D;
 }
 
 #portfolio-gallery {
@@ -1199,6 +1233,11 @@ footer > div ul li a:visited:active {
   background-size: cover;
   background-position: center;
   grid-area: image;
+}
+#portfolio-gallery #filter-container #gallery li .portfolio-project-container .portfolio-cover-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 20px -9px #000000;
+  transition: 0.25s;
 }
 #portfolio-gallery #filter-container #gallery li .portfolio-project-container .portfolio-title {
   padding-top: 15px;

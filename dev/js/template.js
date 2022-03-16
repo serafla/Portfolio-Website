@@ -22,9 +22,9 @@ window.addEventListener('load', function() {
      let tag = document.querySelector("#template-hero-text h3");
      tag.innerHTML = projects[localStorage.getItem("indexValue")].tag;
 
-      // populate components
-      let components = document.querySelector("#components-container li");
-      components.innerHTML = projects[localStorage.getItem("indexValue")].components;
+      // // populate components
+      // let components = document.querySelector("#components-container li");
+      // components.innerHTML = projects[localStorage.getItem("indexValue")].components;
 
        //populate description
      let description = document.querySelector("#description-container p");
