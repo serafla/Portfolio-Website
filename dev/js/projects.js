@@ -8,7 +8,7 @@ export let projects = [
         process_description: "The MET Cloisters is a beautiful medieval art museum in Manhattan that I had the privilege of visiting in the summer of 2021. The most notable thing about the Cloisters is that like most art museums, it sources all of its artwork from around the globe, but unlike other art museums, its artwork includes entire medieval facades. The process for this infographic poster started with gathering images of the most popular facades and art works and playing with their hue in order to represent a stained glass window. I then tried to “shatter” the images to present a cynical eye to the act of curation, which is explained by the quote at the bottom of the poster: 'Perhaps the supreme example of curatorial genius working in exquisite harmony with vast wealth.'",
         process_imgs: ['./img/Cloisters/Cloisters-Sketch-1.jpg', './img/Cloisters/Cloisters-Sketch-2.jpg' ],
         brand_guide: ['./img/Cloisters/Cloisters-Branding.jpg'],
-        images:['./img/Cloisters/Cloisters-1.jpg','./img/Cloisters/Cloisters-2.jpg','./img/Cloisters/Cloisters-3.jpg','./img/Cloisters/Cloisters-4.jpg'],
+        images:['./img/Cloisters/CLoisters-CoverImage.jpg','./img/Cloisters/Cloisters-2.jpg','./img/Cloisters/Cloisters-3.jpg','./img/Cloisters/Cloisters-4.jpg'],
         video: "",
         carousel: ""
     },
