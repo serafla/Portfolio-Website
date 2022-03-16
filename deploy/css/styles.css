@@ -510,40 +510,45 @@ header > div #nav-container {
     Footer
 ============= */
 footer {
-  background-color: #fff;
-  display: grid;
-  grid-template-areas: ". footer .";
-  grid-template-columns: 10px auto 10px;
-  padding: 45px 0 40px;
-  text-align: center;
+  margin-top: 10%;
+}
+footer hr {
+  margin-top: 10%;
+  border-top: 2.5pt;
+  border-color: #C4C4C4;
+  width: 80%;
+  display: flex;
+  justify-content: center;
 }
 footer > div {
-  grid-area: footer;
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-footer > div h1 {
-  font-size: 1.25rem;
+footer > div h5 {
+  font-size: 1em;
   margin-bottom: 10px;
-}
-footer > div h1 span {
-  color: #fff;
+  color: #F2633F;
 }
 footer > div ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 footer > div ul li {
   margin: 0 10px;
 }
 footer > div ul li a:link,
 footer > div ul li a:visited {
-  color: #000;
-  font-size: 1.875rem;
+  padding: 10px;
+  color: #F2633F;
+  font-size: 1.5em;
   transition: 0.25s;
 }
 footer > div ul li a:link:hover, footer > div ul li a:link:active,
 footer > div ul li a:visited:hover,
 footer > div ul li a:visited:active {
-  color: #fff;
+  color: #FFA48D;
 }
 
 /* =============
@@ -624,70 +629,6 @@ footer > div ul li a:visited:active {
 }
 #portfolio-hero #portfolio-hero-container #portfolio-hero-image-container #hero-carousel #gallery-3 {
   background-image: url("../img/NotAnExhibit/NotAnExhibit-CoverImage.jpg");
-}
-
-@media (min-width: 768px) {
-  #portfolio-controls {
-    display: grid;
-    grid-template-columns: auto 70% auto;
-    grid-template-areas: "controls controls controls" ". lines .";
-  }
-}
-@media (min-width: 1024px) {
-  #portfolio-controls {
-    display: grid;
-    grid-template-columns: auto 70% auto;
-    grid-template-areas: ". controls ." ". lines .";
-  }
-}
-#portfolio-controls ul {
-  grid-area: controls;
-  display: flex;
-  justify-content: space-between;
-  padding: 5% 5% 3% 5%;
-}
-#portfolio-controls ul li a {
-  padding: 15px;
-  color: #000;
-  text-decoration: none;
-  font-size: 1em;
-}
-@media (min-width: 768px) {
-  #portfolio-controls ul li a {
-    font-size: 1.25em;
-  }
-}
-#portfolio-controls ul li a:hover {
-  color: #F2633F;
-  transition: 0.25s;
-}
-
-#lines {
-  grid-area: lines;
-  width: 100%;
-}
-#lines .standard {
-  position: relative;
-  height: 3px;
-  background-color: #000;
-}
-#lines .standard .accent {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50px;
-  height: 3px;
-  background-color: #F2633F;
-}
-@media (min-width: 768px) {
-  #lines .standard .accent {
-    width: 100px;
-  }
-}
-@media (min-width: 1024px) {
-  #lines .standard .accent {
-    width: 100px;
-  }
 }
 
 #project-template hr {
@@ -1199,6 +1140,11 @@ footer > div ul li a:visited:active {
   background-size: cover;
   background-position: center;
   grid-area: image;
+}
+#portfolio-gallery #filter-container #gallery li .portfolio-project-container .portfolio-cover-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 20px -9px #000000;
+  transition: 0.25s;
 }
 #portfolio-gallery #filter-container #gallery li .portfolio-project-container .portfolio-title {
   padding-top: 15px;

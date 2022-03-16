@@ -1,82 +1,83 @@
-#portfolio-controls{
+// #portfolio-controls{
 
-        @include md{
-            display: grid;
-            grid-template-columns: auto 70% auto;
-            grid-template-areas: "controls controls controls" 
-            ". lines .";
-        }
+//         @include md{
+//             display: grid;
+//             grid-template-columns: auto 70% auto;
+//             grid-template-areas: "controls controls controls" 
+//             ". lines .";
+//         }
 
-        @include lg{
-            display: grid;
-            grid-template-columns: auto 70% auto;
-            grid-template-areas: ". controls ." 
-            ". lines .";
-        }
+//         @include lg{
+//             display: grid;
+//             grid-template-columns: auto 70% auto;
+//             grid-template-areas: ". controls ." 
+//             ". lines .";
+//         }
     
     
-        ul{
-            grid-area: controls;
-            display: flex;
-            justify-content: space-between;
-            padding: 5% 5% 3% 5%;
+//         .filter-button{
+//             grid-area: controls;
+//             display: flex;
+//             justify-content: space-between;
+//             padding: 5% 5% 3% 5%;
     
            
-            li {
+          
                 
-                a{
-                    padding: 15px;
-                    color: $black;
-                    text-decoration: none;
-                    font-size: 1em;
+//                 a{
+//                     padding: 15px;
+//                     color: $black;
+//                     text-decoration: none;
+//                     font-size: 1em;
     
-                    @include md{
-                        font-size: 1.25em;
-                    }
+//                     @include md{
+//                         font-size: 1.25em;
+//                     }
                     
                   
-                }
+//                 }
 
-                a:hover {
-                    color: $orange;
-                    transition: 0.25s;
+//                 a:hover, a:active {
+//                     color: $orange;
+//                     transition: 0.25s;
 
-                }
+//                 }
 
+               
+               
                 
-                
-            }
+           
             
-        }
-    }
+//         }
+//     }
     
 
-    #lines{
-        grid-area: lines;
-        width: 100%;
+//     #lines{
+//         grid-area: lines;
+//         width: 100%;
      
 
-        .standard{
-            position: relative;
-            height: 3px;
-            background-color: $black;
+//         .standard{
+//             position: relative;
+//             height: 3px;
+//             background-color: $black;
 
-            .accent {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 50px;
-                height: 3px;
-                background-color: $orange;
+//             .accent {
+//                 position: absolute;
+//                 top: 0;
+//                 left: 0;
+//                 width: 50px;
+//                 height: 3px;
+//                 background-color: $orange;
 
-                @include md{
-                    width: 100px;
-                }
-                @include lg{
-                    width: 100px; 
-                }
-            }
-        }
+//                 @include md{
+//                     width: 100px;
+//                 }
+//                 @include lg{
+//                     width: 100px; 
+//                 }
+//             }
+//         }
 
        
-    }
+//     }

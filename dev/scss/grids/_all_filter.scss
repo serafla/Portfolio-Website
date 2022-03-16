@@ -36,6 +36,7 @@
                 "g11 g10"
                 "g12 g10";
 
+
             }
 
             li{
@@ -118,6 +119,7 @@
                     display: inline-block;
                 }
 
+
                 .portfolio-project-container{
                     height: 100%;
                     width: 100%;
@@ -132,6 +134,11 @@
                         background-size: cover ;
                         background-position: center ;
                         grid-area: image ;
+                        &:hover{
+                            transform:scale(1.02);
+                            box-shadow: 0px 0px 20px -9px #000000;
+                            transition: 0.25s;
+                          }
                     }
                     .portfolio-title{
                         padding-top: 15px;
@@ -156,6 +163,8 @@
                     }
                 }
             }
+               
+            
  
 
     }
