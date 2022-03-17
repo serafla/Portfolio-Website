@@ -492,6 +492,37 @@ textarea {
 /* =============
     Header
 ============= */
+#template-nav {
+  position: fixed;
+  left: 20px;
+  top: 40vh;
+}
+#template-nav ul li a {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  height: 4px;
+  width: 40px;
+}
+#template-nav ul li a section {
+  position: relative;
+}
+#template-nav ul li a section .standard-nav-lines {
+  height: 4px;
+  width: 40px;
+  background-color: #8F8F8F;
+  cursor: pointer;
+}
+#template-nav ul li a section .standard-nav-lines:hover {
+  background-color: #F2633F;
+}
+#template-nav ul li a section .standard-nav-lines:active {
+  background-color: #F2633F;
+}
+
+/* =============
+    Header
+============= */
 header {
   position: fixed;
   width: 100%;

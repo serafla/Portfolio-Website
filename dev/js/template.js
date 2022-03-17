@@ -2,7 +2,9 @@ import { projects } from "./projects"
 // import {Carousel} from "@fancyapps/ui";
 import { gsap } from "gsap";
 
+
 window.addEventListener('load', function() {
+
 
   // const templateCarousel = new Carousel(document.querySelector("#project-carousel"), {
   //     'center' : false
