@@ -3,6 +3,7 @@ import { projects } from "./projects"
 import {burgerTL} from "./burgerAnimation";
 import {menuAnimation} from "./mobileMenu.js";
 import { displayWindowSize } from "./mobileResizing";
+import { SlideinTop } from "./scrollAnimation";
 // import { scrollPage } from "./pageScroll";
 
 
@@ -41,6 +42,9 @@ window.addEventListener('load', function (){
           link.href = "project_template.html?=" + projects[i].title;
       });
   });
+   
+  // scroll trigger
+    SlideinTop(".portfolio-project-container", ".filtr-item");
    
 });
 
