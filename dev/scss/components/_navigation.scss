@@ -6,7 +6,13 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding-top: 40%;
+
+    @include lg{
+        justify-content: flex-end;
+        padding-top: 0%;
+
+    }
 
     ul {
     
@@ -17,8 +23,9 @@
         }
 
         li {
-            margin-bottom: 20px;
-            text-align: right;
+            margin-bottom: 40px;
+            text-align: left;
+            
 
             @include lg {
                 align-items: center;
@@ -28,16 +35,41 @@
 
 
             a{
-                color: $white;
-                padding: 20px;
+                color: $orange;
                 text-decoration: none;
-                font-size: rem-calc(18);
+                font-size: rem-calc(30);
+
+                @include lg{
+                    padding: 20px;
+                    font-size: rem-calc(18);  
+                    color: $white;
+
+                    &:hover{
+                        color: $orange;
+                        transition: 0.25s;
+                    } 
+                }
             }
 
             // .underline{
             //     border: 10px;
             //     border-color: $orange;
             // }
+        }
+
+        #contact{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            #down-arrow{
+                padding-left: 20px;
+                height: 30px;
+                width: 30px;
+                @include lg{
+                    display: none;
+                }
+            }
         }
 
         

@@ -31,22 +31,30 @@
         </section>
     
         <section id="burger-container">
-            <svg width="81" height="83" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#fff" stroke-width="2" d="M20 28h40M30 36h30M40 44h20"/></svg>
+            <svg width="40" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="burger" stroke="#F2633F" stroke-width="2">
+                  <path id="burger-line-1" d="M0 1h40" class="burger-lines"/>
+                  <path id="burger-line-2" d="M10 9h30" class="burger-lines"/>
+                  <path id="burger-line-3" d="M20 17h20" class="burger-lines"/>
+                </g>
+              </svg>
         </section>
     
         <nav id="nav-container" data-nav="main-navigation">
             <ul>
-                <li>
-                    <a href="index.html">Portfolio</a>
-                    <div class="underline"></div>
+                <li class="nav-btns">
+                    <a href="index.html#portfolio-gallery">Portfolio</a>
+                    
                 </li>
-                <li>
+                <li class="nav-btns">
                     <a href="about.html">About</a>
-                    <div class="underline"></div>
+                    
                 </li>
-                <li>
-                    <a href="contact_module.html">Contact</a>
-                    <div class="underline"></div>
+                <li id="contact" class="nav-btns">
+                    <a href="about.html#contact-buttons">Contact</a>
+                    <svg id="down-arrow" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 18">
+                        <path d="m2 2 13 13L27.5 2" stroke="#F2633F" stroke-width="3"/>
+                      </svg>
                 </li>
             </ul>
         </nav>

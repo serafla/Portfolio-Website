@@ -109,6 +109,10 @@
                     #technology-list{
                         grid-area: tech;
                         padding-top: 20px;
+
+                        @include md{
+                            padding-top: 0px;
+                        }
                     }
                     h6{
                         margin: 0;
@@ -117,6 +121,10 @@
                     #design-list{
                         grid-area: design;
                         padding-top: 20px;
+
+                        @include md{
+                            padding-top: 0px;
+                        }
                     }
                 
             }
@@ -129,7 +137,7 @@
 
        
     #contact-buttons{
-        margin-top: 40px;
+        margin-top: 120px;
         display: grid;
         grid-template-columns: auto 500px auto;
         grid-template-areas: ". button-1 ."
@@ -159,6 +167,8 @@
             background-color: $orange;
             color: $white;
             transition: 0.25s;
+            z-index: 2000;
+            cursor: pointer;
         }
 
         #link-1{

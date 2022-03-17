@@ -28,23 +28,31 @@ header {
             grid-area: burger;
             justify-content: flex-end;
             padding: 20px;
-
+            z-index: 10000;
             @include lg {
                 display: none !important;
             }
 
-            i {
+            
                 cursor: pointer;
-            }
+            
         }
 
         #nav-container {
-            display: none;
+            background-color: $charcoal;
+            position: fixed;
+            height: 100vh;
+            width: 100vw;
+            // z-index: 2000;
             grid-area: nav;
 
 
             @include lg {
-                display: block !important;
+                height: 100%;
+                width: 100%;
+                background-color: transparent;
+                // display: block !important;
+                position: static;
             }
         }
     }

@@ -431,7 +431,13 @@ textarea {
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding-top: 40%;
+}
+@media (min-width: 1024px) {
+  #nav-container {
+    justify-content: flex-end;
+    padding-top: 0%;
+  }
 }
 @media (min-width: 1024px) {
   #nav-container ul {
@@ -441,8 +447,8 @@ textarea {
   }
 }
 #nav-container ul li {
-  margin-bottom: 20px;
-  text-align: right;
+  margin-bottom: 40px;
+  text-align: left;
 }
 @media (min-width: 1024px) {
   #nav-container ul li {
@@ -452,10 +458,35 @@ textarea {
   }
 }
 #nav-container ul li a {
-  color: #fff;
-  padding: 20px;
+  color: #F2633F;
   text-decoration: none;
-  font-size: 1.125rem;
+  font-size: 1.875rem;
+}
+@media (min-width: 1024px) {
+  #nav-container ul li a {
+    padding: 20px;
+    font-size: 1.125rem;
+    color: #fff;
+  }
+  #nav-container ul li a:hover {
+    color: #F2633F;
+    transition: 0.25s;
+  }
+}
+#nav-container ul #contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#nav-container ul #contact #down-arrow {
+  padding-left: 20px;
+  height: 30px;
+  width: 30px;
+}
+@media (min-width: 1024px) {
+  #nav-container ul #contact #down-arrow {
+    display: none;
+  }
 }
 
 /* =============
@@ -487,22 +518,27 @@ header > div #burger-container {
   grid-area: burger;
   justify-content: flex-end;
   padding: 20px;
+  z-index: 10000;
+  cursor: pointer;
 }
 @media (min-width: 1024px) {
   header > div #burger-container {
     display: none !important;
   }
 }
-header > div #burger-container i {
-  cursor: pointer;
-}
 header > div #nav-container {
-  display: none;
+  background-color: #2C2C30;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
   grid-area: nav;
 }
 @media (min-width: 1024px) {
   header > div #nav-container {
-    display: block !important;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    position: static;
   }
 }
 
@@ -629,6 +665,145 @@ footer > div ul li a:visited:active {
 }
 #portfolio-hero #portfolio-hero-container #portfolio-hero-image-container #hero-carousel #gallery-3 {
   background-image: url("../img/NotAnExhibit/NotAnExhibit-CoverImage.jpg");
+}
+
+#portfolio-gallery {
+  margin: 40px 20px 0px 20px;
+}
+@media (min-width: 1200px) {
+  #portfolio-gallery #filter-container {
+    display: grid;
+    grid-template-columns: auto 1000px auto;
+    grid-template-areas: ". gallery .";
+  }
+}
+#portfolio-gallery #filter-container #gallery {
+  grid-area: gallery;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(12, 300px);
+  gap: 40px;
+}
+@media (min-width: 768px) {
+  #portfolio-gallery #filter-container #gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 300px);
+    gap: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  #portfolio-gallery #filter-container #gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 300px);
+    gap: 40px;
+    grid-template-areas: "g1 g2" "g1 g3" "g5 g4" "g6 g4" "g7 g8" "g7 g9" "g11 g10" "g12 g10";
+  }
+}
+#portfolio-gallery #filter-container #gallery li {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  #portfolio-gallery #filter-container #gallery li:nth-child(1) {
+    grid-area: g1;
+  }
+}
+@media (min-width: 1024px) {
+  #portfolio-gallery #filter-container #gallery li:nth-child(2) {
+    grid-area: g2;
+  }
+}
+@media (min-width: 1024px) {
+  #portfolio-gallery #filter-container #gallery li:nth-child(3) {
+    grid-area: g3;
+  }
+}
+@media (min-width: 1024px) {
+  #portfolio-gallery #filter-container #gallery li:nth-child(4) {
+    grid-area: g4;
+  }
+}
+@media (min-width: 1024px) {
+  #portfolio-gallery #filter-container #gallery li:nth-child(5) {
+    grid-area: g5;
+  }
+}
+@media (min-width: 1024px) {
+  #portfolio-gallery #filter-container #gallery li:nth-child(6) {
+    grid-area: g6;
+  }
+}
+@media (min-width: 1024px) {
+  #portfolio-gallery #filter-container #gallery li:nth-child(7) {
+    grid-area: g7;
+  }
+}
+@media (min-width: 1024px) {
+  #portfolio-gallery #filter-container #gallery li:nth-child(8) {
+    grid-area: g8;
+  }
+}
+@media (min-width: 1024px) {
+  #portfolio-gallery #filter-container #gallery li:nth-child(9) {
+    grid-area: g9;
+  }
+}
+@media (min-width: 1024px) {
+  #portfolio-gallery #filter-container #gallery li:nth-child(10) {
+    grid-area: g10;
+  }
+}
+@media (min-width: 1024px) {
+  #portfolio-gallery #filter-container #gallery li:nth-child(11) {
+    grid-area: g11;
+  }
+}
+@media (min-width: 1024px) {
+  #portfolio-gallery #filter-container #gallery li:nth-child(12) {
+    grid-area: g12;
+  }
+}
+#portfolio-gallery #filter-container #gallery li a:link, #portfolio-gallery #filter-container #gallery li a:visited {
+  color: #000;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+#portfolio-gallery #filter-container #gallery li .portfolio-project-container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto 35px 30px;
+  grid-template-areas: "image" "title" "tag";
+}
+#portfolio-gallery #filter-container #gallery li .portfolio-project-container .portfolio-cover-image {
+  background-size: cover;
+  background-position: center;
+  grid-area: image;
+}
+#portfolio-gallery #filter-container #gallery li .portfolio-project-container .portfolio-cover-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 20px -9px #000000;
+  transition: 0.25s;
+}
+#portfolio-gallery #filter-container #gallery li .portfolio-project-container .portfolio-title {
+  padding-top: 15px;
+  grid-area: title;
+  text-align: left;
+  font-size: 0.9em;
+}
+@media (min-width: 1024px) {
+  #portfolio-gallery #filter-container #gallery li .portfolio-project-container .portfolio-title {
+    font-size: 1em;
+  }
+}
+#portfolio-gallery #filter-container #gallery li .portfolio-project-container .portfolio-tags {
+  grid-area: tag;
+  text-align: left;
+  font-size: 0.9em;
+  color: #8F8F8F;
 }
 
 #project-template hr {
@@ -978,6 +1153,11 @@ footer > div ul li a:visited:active {
   grid-area: tech;
   padding-top: 20px;
 }
+@media (min-width: 768px) {
+  #about-page #about-resume #about-resume-container #skills-container #technology-list {
+    padding-top: 0px;
+  }
+}
 #about-page #about-resume #about-resume-container #skills-container h6 {
   margin: 0;
   line-height: 30px;
@@ -986,8 +1166,13 @@ footer > div ul li a:visited:active {
   grid-area: design;
   padding-top: 20px;
 }
+@media (min-width: 768px) {
+  #about-page #about-resume #about-resume-container #skills-container #design-list {
+    padding-top: 0px;
+  }
+}
 #about-page #contact-buttons {
-  margin-top: 40px;
+  margin-top: 120px;
   display: grid;
   grid-template-columns: auto 500px auto;
   grid-template-areas: ". button-1 ." ". button-2 .";
@@ -1017,149 +1202,12 @@ footer > div ul li a:visited:active {
   background-color: #F2633F;
   color: #fff;
   transition: 0.25s;
+  z-index: 2000;
+  cursor: pointer;
 }
 #about-page #contact-buttons #link-1 {
   grid-area: button-1;
 }
 #about-page #contact-buttons #link-2 {
   grid-area: button-2;
-}
-
-#portfolio-gallery {
-  margin: 40px 20px 0px 20px;
-}
-@media (min-width: 1200px) {
-  #portfolio-gallery #filter-container {
-    display: grid;
-    grid-template-columns: auto 1000px auto;
-    grid-template-areas: ". gallery .";
-  }
-}
-#portfolio-gallery #filter-container #gallery {
-  grid-area: gallery;
-  width: 100%;
-  display: grid;
-  grid-template-rows: repeat(12, 300px);
-  gap: 40px;
-}
-@media (min-width: 768px) {
-  #portfolio-gallery #filter-container #gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 300px);
-    gap: 40px;
-  }
-}
-@media (min-width: 1024px) {
-  #portfolio-gallery #filter-container #gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(8, 300px);
-    gap: 40px;
-    grid-template-areas: "g1 g2" "g1 g3" "g5 g4" "g6 g4" "g7 g8" "g7 g9" "g11 g10" "g12 g10";
-  }
-}
-#portfolio-gallery #filter-container #gallery li {
-  width: 100%;
-}
-@media (min-width: 1024px) {
-  #portfolio-gallery #filter-container #gallery li:nth-child(1) {
-    grid-area: g1;
-  }
-}
-@media (min-width: 1024px) {
-  #portfolio-gallery #filter-container #gallery li:nth-child(2) {
-    grid-area: g2;
-  }
-}
-@media (min-width: 1024px) {
-  #portfolio-gallery #filter-container #gallery li:nth-child(3) {
-    grid-area: g3;
-  }
-}
-@media (min-width: 1024px) {
-  #portfolio-gallery #filter-container #gallery li:nth-child(4) {
-    grid-area: g4;
-  }
-}
-@media (min-width: 1024px) {
-  #portfolio-gallery #filter-container #gallery li:nth-child(5) {
-    grid-area: g5;
-  }
-}
-@media (min-width: 1024px) {
-  #portfolio-gallery #filter-container #gallery li:nth-child(6) {
-    grid-area: g6;
-  }
-}
-@media (min-width: 1024px) {
-  #portfolio-gallery #filter-container #gallery li:nth-child(7) {
-    grid-area: g7;
-  }
-}
-@media (min-width: 1024px) {
-  #portfolio-gallery #filter-container #gallery li:nth-child(8) {
-    grid-area: g8;
-  }
-}
-@media (min-width: 1024px) {
-  #portfolio-gallery #filter-container #gallery li:nth-child(9) {
-    grid-area: g9;
-  }
-}
-@media (min-width: 1024px) {
-  #portfolio-gallery #filter-container #gallery li:nth-child(10) {
-    grid-area: g10;
-  }
-}
-@media (min-width: 1024px) {
-  #portfolio-gallery #filter-container #gallery li:nth-child(11) {
-    grid-area: g11;
-  }
-}
-@media (min-width: 1024px) {
-  #portfolio-gallery #filter-container #gallery li:nth-child(12) {
-    grid-area: g12;
-  }
-}
-#portfolio-gallery #filter-container #gallery li a:link, #portfolio-gallery #filter-container #gallery li a:visited {
-  color: #000;
-  text-decoration: none;
-  height: 100%;
-  width: 100%;
-  display: inline-block;
-}
-#portfolio-gallery #filter-container #gallery li .portfolio-project-container {
-  height: 100%;
-  width: 100%;
-  display: grid;
-  grid-template-rows: auto 35px 30px;
-  grid-template-areas: "image" "title" "tag";
-}
-#portfolio-gallery #filter-container #gallery li .portfolio-project-container .portfolio-cover-image {
-  background-size: cover;
-  background-position: center;
-  grid-area: image;
-}
-#portfolio-gallery #filter-container #gallery li .portfolio-project-container .portfolio-cover-image:hover {
-  transform: scale(1.02);
-  box-shadow: 0px 0px 20px -9px #000000;
-  transition: 0.25s;
-}
-#portfolio-gallery #filter-container #gallery li .portfolio-project-container .portfolio-title {
-  padding-top: 15px;
-  grid-area: title;
-  text-align: left;
-  font-size: 0.9em;
-}
-@media (min-width: 1024px) {
-  #portfolio-gallery #filter-container #gallery li .portfolio-project-container .portfolio-title {
-    font-size: 1em;
-  }
-}
-#portfolio-gallery #filter-container #gallery li .portfolio-project-container .portfolio-tags {
-  grid-area: tag;
-  text-align: left;
-  font-size: 0.9em;
-  color: #8F8F8F;
 }
